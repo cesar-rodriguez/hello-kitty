@@ -1,10 +1,4 @@
 
-output "aws_s3_stackgen_hello_kitty_cesar_bucket_website_endpoint" {
-  value = module.appcd_551e1d2b-88ec-5406-87cf-c51521bbe894.bucket_website_endpoint
-  sensitive = false
-}
-
-
 output "aws_s3_stackgen_hello_kitty_cesar_kms_arn" {
   value = module.appcd_551e1d2b-88ec-5406-87cf-c51521bbe894.kms_arn
   sensitive = false
@@ -19,6 +13,12 @@ output "aws_s3_stackgen_hello_kitty_cesar_arn" {
 
 output "aws_s3_stackgen_hello_kitty_cesar_bucket_name" {
   value = module.appcd_551e1d2b-88ec-5406-87cf-c51521bbe894.bucket_name
+  sensitive = false
+}
+
+
+output "aws_s3_stackgen_hello_kitty_cesar_bucket_website_endpoint" {
+  value = module.appcd_551e1d2b-88ec-5406-87cf-c51521bbe894.bucket_website_endpoint
   sensitive = false
 }
 
